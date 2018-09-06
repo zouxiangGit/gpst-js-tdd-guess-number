@@ -12,4 +12,8 @@ describe('main()', () => {
     it('should return 1A3B when different three number for seq1 with seq2', () => {
         expect(app.guess('1234', '1423')).toEqual('1A3B');
     });
+
+    it('should return 0A4B when different all number for seq1 with seq2', () => {
+        expect(app.guess('1234', '4321')).toEqual('0A4B');
+    });
 });
